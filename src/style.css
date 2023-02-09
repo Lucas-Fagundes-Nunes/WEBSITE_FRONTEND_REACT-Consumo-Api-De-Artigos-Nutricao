@@ -1,0 +1,127 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgba(31,195,171,.1);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    height: 100px;
+    width: 100%;
+    background: rgb(0,36,7);
+    background: linear-gradient(90deg, rgba(0,36,7,1) 5%, rgba(31,195,171,1) 50%, rgba(0,36,7,1) 95%);
+    
+    color: #FFF;
+}
+
+.post{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 700px;
+    background-color: #FFF;
+    border-radius: 7px;
+    border-width: 1px;
+    margin: 8px;
+    padding: 10px;
+    box-shadow: 4px 6px 20px black;
+}
+
+
+
+.titulo{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.subtitulo
+{
+    margin: 5px;
+}
+
+.botao{
+    height: 40px;
+    background: none;
+    border-radius: 5px;
+    color: rgba(31,195,171);
+    border: 2px solid rgba(31,195,171);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.botao:hover{
+    background-color: rgba(31,195,171);
+    color: #FFF
+}
+
+footer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: rgb(0,36,7);
+    background: linear-gradient(90deg, rgba(0,36,7,1) 5%, rgba(31,195,171,1) 50%, rgba(0,36,7,1) 95%);
+    color: #FFF;
+}
+
+.textoFooter
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 700px;
+    margin: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.textoFooter li
+{
+    padding: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.textoFooter li svg
+{
+    width: 35px;
+    height: 35px;
+}
+
+.textoFooter li:hover
+{   
+    background: rgba(255,255,255, .3);
+}
+
+.branco
+{
+    height: 50px;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .post, .textoFooter
+    {
+        width: 80%;
+    }
+}
